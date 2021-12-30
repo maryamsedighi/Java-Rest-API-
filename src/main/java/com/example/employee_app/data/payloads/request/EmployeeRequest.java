@@ -1,8 +1,7 @@
 package com.example.employee_app.data.payloads.request;
 
 import com.example.employee_app.data.model.Department;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -12,7 +11,13 @@ import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class EmployeeRequest {
+    @NotBlank
+    @NotNull
+    private Integer id;
     @NotBlank
     @NotNull
     private String firstName;

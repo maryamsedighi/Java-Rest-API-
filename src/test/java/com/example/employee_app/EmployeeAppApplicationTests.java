@@ -7,9 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class EmployeeAppApplicationTests {
 
-//    @Test
-//    void getAllEmployeeTest() {
-//    }
+    @Test
+    void getAllEmployeeTest() {
+    }
 
 }
 
