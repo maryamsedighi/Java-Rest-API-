@@ -10,7 +10,7 @@ services:
       - ./target/war-for-migrate:/usr/local/tomcat/webapps-javaee
     environment:
       TZ: Asia/Tehran
-      JDBC_URL: jdbc:mysql://mysql:3306/employee
+      JDBC_URL: jdbc:mysql://mysql:3306/employee_db
       JDBC_USER: root
       JDBC_PASS: 123456
     links:
