@@ -20,9 +20,8 @@ public class ResourceNotFoundException extends RuntimeException {
         this.name = name;
     }
 
-    public ResourceNotFoundException(String name, String Id, Integer employeeId) {
-        super("the employee" + name + "with employeeId " + employeeId + "does not exist.");
-        this.name = name;
+    public ResourceNotFoundException(Integer employeeId) {
+        super("The employee with Id: " + employeeId + " does not exist.");
         this.employeeId = employeeId;
     }
 }
